@@ -10,7 +10,7 @@
 
     /* Text Colors */
     --text-primary-color: #efefef;
-    
+
     /* Border Colors */
     --border-primary-color: #333;
 
@@ -49,8 +49,21 @@ main,
     width: 100%;
 }
 
-main,
+main, 
 .infos {
     display: flex;
     justify-content: space-between;
+}
+
+.info {
+    padding: var(--spaceing-sm);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--border-primary-color);
+    display: flex;
+    gap: var(--spaceing-sm);
+}
+
+.board {
+    border: 1px solid var(--border-primary-color);
+    flex-grow: 1;
 }
